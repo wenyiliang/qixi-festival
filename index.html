@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>七夕祝福</title>
+	<link rel="stylesheet" type="text/css" href="css/page.css">
+	<link rel="stylesheet" type="text/css" href="css/page1.css">
+	<link rel="stylesheet" type="text/css" href="css/page2.css">
+	<link rel="stylesheet" type="text/css" href="css/page3.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/transit.js"></script>
+</head>
+<body>
+	<div id="content">
+	     <ul>
+	     	<li>
+	     		<div class="total">
+	     		  <div class="first"></div>
+	     		  <div class="second"></div>
+	     		  <div class="third"></div>
+	     		</div>
+	     		<div class="sun"></div>
+	     		<div class="cloud">
+	     			<div class="cloud1"></div>
+	     			<div class="cloud2"></div>
+	     		</div>
+	     	</li>
+	     	<li>
+	     		<div class="page2bg"></div>
+	     		<div class="prepage2"></div>
+	     		<div class="shop">
+	     			<div class=door>
+	     				<div class="left"></div>
+	     				<div class="right"></div>
+	     			</div>
+	     			<div class="lamp"></div>
+	     		</div>
+	     		<div class="bird"></div>
+	     	</li>
+	     	<li>
+	     		<div class="pagec">
+	     			<div class="cbg1"></div>
+	     			<div class="cbg2" ></div>
+	     			<div class="cbg3"></div>
+	     		</div>
+	     		<div class="girl"></div>
+	     		<div class="bridge-bottom">
+                    <div class="water">
+                        <div id="water1" class="water_1"></div>
+                        <div id="water2" class="water_2"></div>
+                        <div id="water3" class="water_3"></div>
+                        <div id="water4" class="water_4"></div>
+                    </div>
+                </div>
+	     		<div class="stars">
+	     			<div class="star1"></div>
+	     			<div class="star2"></div>
+	     			<div class="star3"></div>
+	     			<div class="star4"></div>
+	     			<div class="star5"></div>
+	     			<div class="star6"></div>
+	     		</div>
+	     	</li>
+	     </ul>
+	<div id="boy" class="charector"></div>
+	<div>
+		<button class="test"></button>
+	</div>
+	</div>	
+	<script type="text/javascript" src="js/qixi.js"></script>
+	<script type="text/javascript">
+	// var sw=Swipe();
+	// var boymodule=boystate();
+	// $(".test").click(function(){
+ //           boymodule.run(2000,0.2).then(function(){
+ //           	    sw.scrollTo(0.5,5000);
+ //           }).then(function(){boymodule.run(5000,0.5);});
+	// });
+	// sw.scrollTo(2,0);
+	
+	// $(".test").click(function(){
+ //        boymodule.run(2000,0.5).then(function(){
+ //       	     boymodule.stop();
+ //       }).then(function(){
+ //       	     return  shutdoor();
+ //       }).then(function(){
+ //       	    lamp.bright();
+ //        }).then(function(){
+ //            return boymodule.toshop(2000);
+ //        }).then(function(){
+ //            return boymodule.getflower();
+ //        }).then(function(){
+ //            bird.fly();
+ //        }).then(function(){
+ //            return  boymodule.outshop(2000);
+ //        }).then(function(){
+ //            return opendoor();
+ //        }).then(function(){
+ //        	 lamp.dark();
+ //         })
+	// });
+	// var snowflakeURl = [
+ //        '../images/snowflake/snowflake1',
+ //        '../images/snowflake/snowflake2',
+ //        '../images/snowflake/snowflake3',
+ //        '../images/snowflake/snowflake4',
+ //        '../images/snowflake/snowflake5',
+ //        '../images/snowflake/snowflake6'
+ //    ]
+
+ //    ///////
+ //    //飘雪花 //
+ //    ///////
+ //    function snowflake() {
+ //        // 雪花容器
+ //        var $flakeContainer = $('#snowflake');
+
+ //        // 随机六张图
+ //        function getImagesName() {
+ //            return snowflakeURl[[Math.floor(Math.random() * 6)]];
+ //        }
+ //        // 创建一个雪花元素
+ //        function createSnowBox() {
+ //            var url = getImagesName();
+ //            return $('<div class="snowbox" />').css({
+ //                'width': 41,
+ //                'height': 41,
+ //                'position': 'absolute',
+ //                'backgroundSize': 'cover',
+ //                'zIndex': 100000,
+ //                'top': '-41px',
+ //                'backgroundImage': 'url(' + url + ')'
+ //            }).addClass('snowRoll');
+ //        }
+ //        // 开始飘花
+ //        setInterval(function() {
+ //            // 运动的轨迹
+ //            var startPositionLeft = Math.random() * width - 100,
+ //                startOpacity    = 1,
+ //                endPositionTop  = height - 40,
+ //                endPositionLeft = startPositionLeft - 100 + Math.random() * 500,
+ //                duration        = height * 10 + Math.random() * 5000;
+
+ //            // 随机透明度，不小于0.5
+ //            var randomStart = Math.random();
+ //            randomStart = randomStart < 0.5 ? startOpacity : randomStart;
+
+ //            // 创建一个雪花
+ //            var $flake = createSnowBox();
+
+ //            // 设计起点位置
+ //            $flake.css({
+ //                left: startPositionLeft,
+ //                opacity : randomStart
+ //            });
+
+ //            // 加入到容器
+ //            $flakeContainer.append($flake);
+
+ //            // 开始执行动画
+ //            $flake.transition({
+ //                top: endPositionTop,
+ //                left: endPositionLeft,
+ //                opacity: 0.7
+ //            }, duration, 'ease-out', function() {
+ //                $(this).remove() //结束后删除
+ //            });
+            
+ //        }, 200);
+ //    }
+	// $(".test").click(function(){
+ //         boymodule.run(2000,0.15).then(function(){
+ //         	return  boymodule.run(1500,0.25,(bridgeY-girl.elem.height())/height);
+ //         }).then(function(){
+ //         	return  boymodule.run(1500,(width/2-boymodule.width())/width+0.02);
+ //         }).then(function(){
+ //         	boymodule.origin();
+ //         }).then(function(){
+ //         	setTimeout(function(){
+ //               girl.rotate();
+ //               boymodule.rotate();
+ //         	},1000)
+ //         }).then(function(){
+ //         	snowflake();
+ //         })
+	// });
+	</script>
+</body>
+</html>
